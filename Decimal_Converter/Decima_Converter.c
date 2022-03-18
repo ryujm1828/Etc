@@ -36,8 +36,9 @@ int main(){
 	
 	int k = size(n,b); 
 	
+	int i;
 	printf("%d Base decimal %d: ",b,n);
-	for(int i=k-1; i>=0; i--){
+	for(i=k-1; i>=0; i--){
 		if(base_change(n,b)[i]>=10)
 			printf("%c",base_change(n,b)[i]+'A'-10);
 		else
